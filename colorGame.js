@@ -9,6 +9,8 @@ var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 
+// Easy Button Function
+
 easyBtn.addEventListener("click", function() {
 	easyBtn.classList.add("selected");
 	hardBtn.classList.remove("selected");
@@ -25,6 +27,8 @@ easyBtn.addEventListener("click", function() {
 	}
 });
 
+// Hard Button Function
+
 hardBtn.addEventListener("click", function() {
 	hardBtn.classList.add("selected");
 	easyBtn.classList.remove("selected");
@@ -38,6 +42,7 @@ hardBtn.addEventListener("click", function() {
 	}
 });
 
+//Reset Button 
 resetButton.addEventListener("click", function() {
 	//generate all new colors
 	colors = generateRandomColors(numSquares);
